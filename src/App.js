@@ -1,7 +1,11 @@
-
 import './App.css';
 import NavBar from './NavBar';
 import BottomFooter from './BottomFooter';
+import packageimg1 from './img/logo2.png';
+import eap110 from './img/eap110.webp';
+import image from './img/image.jpg';
+import hologram from './img/hologram-img.png';
+
 
 
 
@@ -12,6 +16,7 @@ function App() {
     <div className="App">
 
        <NavBar/>
+         {/* section1-phase of main page */}
        <div className="home-main-section1">
           <div className='left_part' >
              <div className='name-highlight'>
@@ -32,6 +37,9 @@ function App() {
              <button className='btn btn-primary btn- small'>Book Now</button>
 
           </div>
+
+
+            {/* section2-phase of main page */}
           <div className='right_part' >
             <div className='background-container'>
             <div className='image-scroller'>
@@ -44,17 +52,74 @@ function App() {
         <div className='Package-title'> New Year Package</div>
         <div className='package-card-container'>
         <div className='package-card'>
-          
+          <img className='card-image' src={packageimg1} alt=''/>
+          <h1 className='heading-containt'>STANDARD</h1>
+          <span className='details'>dfgfh</span><br/>
+          <span className='details'>dfgfh</span><br/>
+          <span className='details'>dfgfh</span><br/>
+          <button className='btn-small btn-primary btn- small'> Join Now</button>
           </div>
-          <div className='package-cardr'>
-          
-          </div>
+
+
           <div className='package-card'>
-          
+          <img className='card-image' src={packageimg1} alt=''/>
+          <h1 className='heading-containt'>STANDARD</h1>
+          <span className='details'>dfgfh</span><br/>
+          <span className='details'>dfgfh</span><br/>
+          <span className='details'>dfgfh</span><br/>
+          <button className='btn-small btn-primary btn- small'> Join Now</button>
+          </div>
+
+
+          <div className='package-card'>
+          <img className='card-image' src={packageimg1} alt=''/>
+          <h1 className='heading-containt'>STANDARD</h1>
+          <span className='details'>dfgfh</span><br/>
+          <span className='details'>dfgfh</span><br/>
+          <span className='details'>dfgfh</span><br/>
+          <button className='btn-small btn-primary btn- small'> Join Now</button>
+          </div>
+
+
+
+          <div className='package-card'>
+          <img className='card-image' src={packageimg1} alt=''/>
+          <h1 className='heading-containt'>STANDARD</h1>
+          <span className='details'>dfgfh</span><br/>
+          <span className='details'>dfgfh</span><br/>
+          <span className='details'>dfgfh</span><br/>
+          <button className='btn-small btn-primary btn- small'> Join Now</button>
           </div>
         </div>
        </div>
+        
 
+
+
+        {/* section3-phase of main page */}
+        <div className='home-main-section3'>
+            <div className='left-side1'>
+              <h1 className='text-top'>Direct Connect To your <br/>
+           Smart  Devices</h1>
+              <h2 className='top-text1'>2.4 Gh / 5 Gh</h2>
+             <img className='card-image-left' src={hologram} alt=''/>
+              
+            </div>
+            <div className='left-side2'>
+              <img src={packageimg1} className='left-side-img' alt=''></img>
+            </div>
+        </div>
+
+        <div className='home-main-section4'>  
+        <div className='img-side1'>
+          <img src={eap110} className='left-side-img1' alt=''/>
+        </div>
+
+        <div className='img-side2'>
+        <img src={image} className='right-side-img2' alt=''/>
+        </div>
+
+        </div>
       <BottomFooter/>
     </div>
   );

@@ -22,16 +22,17 @@
   .App-header .Main_logo{
     width: 35px !important;
     height: 35px !important;
+
   }
   
   .App-header nav{
-    position: fixed; /* Fix the position */
+    position: fixed; 
     top: 0;
     z-index: 1000;
     background-color: white;
     border-bottom: 3px solid rgb(255, 200, 0) !important;
     width: 100%;
-    height:max-content;
+    height:50px;
     display: flex;
     justify-content: space-between;
     align-items: center;

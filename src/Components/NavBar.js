@@ -1,7 +1,8 @@
 import React from 'react';
-import img1 from '../src/img/Av_network-logo.png';
-import img2 from '../src/img/logo1.png';
-import './css/NavBar.css';
+import img1 from '../img/Av_network-logo.png';
+import img2 from '../img/logo1.png';
+import '../css/NavBar.css';
+
 
 function NavBar () {
     return (
@@ -9,6 +10,8 @@ function NavBar () {
              <header className="App-header">
         <nav>
         <a href='/'><img className='imagemain' src={img1}   alt="" /></a>
+
+        
         <img src={img2} className='Main_logo'  alt=""/>
           <ul>
             <li>
